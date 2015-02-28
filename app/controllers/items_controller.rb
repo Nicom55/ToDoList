@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
 
   def create
     @list = List.find(params[:id])
-    @item = @list.item.create(title: params[:item][:title])
+    @item = @list.item.create(item_params)
     render @item
   end
   
@@ -10,6 +10,7 @@ class ItemsController < ApplicationController
     @list = List.find(params[:id])
     @item = Item.find(params[:id])
     if @item.update(item_params)
+      #not sure about this since I want to use AJAX and stay on one page
       render item_path
     else
       @errors = @item.errors

@@ -1,11 +1,9 @@
 class ListsController < ApplicationController
   
-  def index
-    @lists = List.all
-  end
-  
   def show
     @list = List.find(params[:id])
+    @items = @list.items.order("created_at DESC")
+    @new_item = Item.new
   end
   
   def new
@@ -25,20 +23,10 @@ class ListsController < ApplicationController
     end
   end
   
-  def update
-    @list = List.find(params[:id])
-    if @list.update(list_params)
-      render lists_path
-    else
-      @errors = @list.errors
-      render :edit
-    end
-  end
-  
   def delete
     @list = List.find(params[:id])
     @list.destroy
-    redirect_to lists_path
+    redirect_to root_path
   end
   
   private
