@@ -1,5 +1,9 @@
 class ListsController < ApplicationController
   
+  def index
+    @lists = List.all.order("created_at DESC")
+  end
+  
   def show
     @list = List.find(params[:id])
     @items = @list.items.order("created_at DESC")
