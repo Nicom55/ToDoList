@@ -1,13 +1,13 @@
 class ItemsController < ApplicationController
 
   def create
-    @list = List.find(params[:id])
+    @list = List.find(params[:list_id])
     @item = @list.item.create(item_params)
     render @item
   end
   
   def update
-    @list = List.find(params[:id])
+    @list = List.find(params[:list_id])
     @item = Item.find(params[:id])
     if @item.update(item_params)
       #not sure about this since I want to use AJAX and stay on one page
@@ -19,7 +19,7 @@ class ItemsController < ApplicationController
   end
   
   def destroy
-    @list = List.find(params[:id])
+    @list = List.find(params[:list_id])
     @item = Item.find(params[:id])
     @item.destroy
     render :nothing => true
