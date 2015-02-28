@@ -15,3 +15,13 @@ Migrating to CreateItems (20150228134114)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150228134114"]]
   [1m[36m (36.5ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "lists" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "My first list!"], ["created_at", "2015-02-28 13:47:28.510822"], ["updated_at", "2015-02-28 13:47:28.510822"]]
+  [1m[36m (24.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "items" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "first item!"], ["created_at", "2015-02-28 13:48:02.595257"], ["updated_at", "2015-02-28 13:48:02.595257"]]
+  [1m[35m (30.7ms)[0m  commit transaction
