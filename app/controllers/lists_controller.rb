@@ -18,7 +18,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     if @list.save
-      redirect_to lists_path
+      render lists_path
     else
       @errors = @list.errors
       render :new
@@ -28,7 +28,7 @@ class ListsController < ApplicationController
   def update
     @list = List.find(params[:id])
     if @list.update(list_params)
-      redirect_to lists_path
+      render lists_path
     else
       @errors = @list.errors
       render :edit
