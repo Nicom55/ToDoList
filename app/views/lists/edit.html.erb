@@ -1,0 +1,24 @@
+<%= form_for(@list) do |l| %>
+
+<!-- list the errors if any exist -->
+<% if @errors %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@errors.count, "error") %> prohibited this Goal from being saved:</h2>
+
+    <ul>
+      <% @errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+  <div class="field">
+    <%= l.label :title %><br>
+    <%= l.text_field :title %>
+  </div>
+  <div class="actions">
+    <%= l.submit %>
+  </div>
+<% end %>
+<%= link_to "Back Home", root_path %>
