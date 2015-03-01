@@ -10,9 +10,6 @@ class ListsController < ApplicationController
     @new_item = Item.new
   end
   
-  def new
-  end
-  
   def edit
     @list = List.find(params[:id])
   end
@@ -20,7 +17,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     if @list.save
-      render lists_path
+      redirect_to list_path(@list)
     else
       @errors = @list.errors
       render :new

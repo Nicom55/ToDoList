@@ -1,5 +1,18 @@
 <p>
-All Lists:
+Create a New List:
+</p>
+<%= form_for(@list) do |l| %>
+  <div class="field">
+    <%= l.label :title %><br>
+    <%= l.text_field :title %>
+  </div>
+  <div class="actions">
+    <%= l.submit %>
+  </div>
+<% end %>
+
+<p>  
+Current Lists:
 </p>
 
 <div>
