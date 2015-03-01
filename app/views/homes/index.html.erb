@@ -1,4 +1,14 @@
+<p>
 All Lists:
-<% @lists.each do |list| %>
-  <%= content_tag :p, list.title %>
-<% end %>
+</p>
+
+<div>
+  <% @lists.each do |list| %>
+  <%= div_for list do %>
+      <%= content_tag :p, list.title %>
+      <p>
+        <%= link_to "View More", list_path(list) %>
+      </p>
+    <% end %>
+  <% end %>
+</div>
