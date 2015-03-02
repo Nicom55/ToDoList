@@ -4278,3 +4278,265 @@ Processing by HomesController#index as HTML
   [1m[35mList Load (0.3ms)[0m  SELECT "lists".* FROM "lists"
   Rendered homes/index.html.erb within layouts/application (3.2ms)
 Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.3ms)
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" DESC LIMIT 1[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."list_id" = ?  [["list_id", 7]]
+
+
+Started GET "/" for 184.189.249.118 at 2015-03-02 02:42:21 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered homes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 101ms (Views: 93.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:22 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 02:42:23 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC[0m  [["list_id", 2]]
+  Rendered lists/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 107ms (Views: 97.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 02:42:50 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC[0m  [["list_id", 2]]
+  Rendered lists/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 97ms (Views: 94.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:42:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 184.189.249.118 at 2015-03-02 02:43:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  [1m[35mList Load (0.3ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered homes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/7" for 184.189.249.118 at 2015-03-02 02:43:04 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC  [["list_id", 7]]
+  Rendered lists/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/7" for 184.189.249.118 at 2015-03-02 02:43:07 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC  [["list_id", 7]]
+  Rendered lists/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
