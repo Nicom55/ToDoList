@@ -24,6 +24,16 @@ class ListsController < ApplicationController
     end
   end
   
+  def update
+    @list = List.find(params[:id])
+    if @list.update(list_params)
+      redirect_to list_path
+		else
+      @errors = @list.errors
+      render :edit
+    end
+  end
+  
   def destroy
     @list = List.find(params[:id])
     @list.destroy
