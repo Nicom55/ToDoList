@@ -4540,3 +4540,591 @@ Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 12
 
 Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-02 02:43:08 +0000
 Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 184.189.249.118 at 2015-03-02 02:50:18 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered homes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 02:50:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered lists/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3:   
+    4:   <!-- Add an item -->
+    5:   Add an item:
+    6:   <%= form_for(@item) do |i| %>
+    7:   <div class="field">
+    8:     <%= i.label :title %><br>
+    9:     <%= i.text_field :title %>
+  app/views/lists/show.html.erb:6:in `_app_views_lists_show_html_erb___4136197441049500116_70144847191320'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.4ms)
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 02:50:21 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered lists/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3:   
+    4:   <!-- Add an item -->
+    5:   Add an item:
+    6:   <%= form_for(@item) do |i| %>
+    7:   <div class="field">
+    8:     <%= i.label :title %><br>
+    9:     <%= i.text_field :title %>
+  app/views/lists/show.html.erb:6:in `_app_views_lists_show_html_erb___4136197441049500116_40823920'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.6ms)
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 02:51:00 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered lists/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3:   
+    4:   <!-- Add an item -->
+    5:   Add an item:
+    6:   <%= form_for(@item) do |item| %>
+    7:   <div class="field">
+    8:     <%= item.label :title %><br>
+    9:     <%= item.text_field :title %>
+  app/views/lists/show.html.erb:6:in `_app_views_lists_show_html_erb___4136197441049500116_70144843749760'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.9ms)
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC  [["list_id", 2]]
+  Rendered lists/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 104ms (Views: 101.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:05 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 02:53:31 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC  [["list_id", 2]]
+  Rendered lists/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:32 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 02:53:37 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 02:53:51 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dj4ZCqorfhJyJ+7AnfaJ1AjRmXXP7YqqR7N4or5Dd26v5dq0uot1HuEj3fjs3s/hwOuvzkIu4iASqEY3mrdt6Q==", "item"=>{"title"=>"an item on the list"}, "commit"=>"Create Item"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.8ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 02:54:07 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dj4ZCqorfhJyJ+7AnfaJ1AjRmXXP7YqqR7N4or5Dd26v5dq0uot1HuEj3fjs3s/hwOuvzkIu4iASqEY3mrdt6Q==", "item"=>{"title"=>"an item on the list"}, "commit"=>"Create Item"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.8ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 02:54:43 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dj4ZCqorfhJyJ+7AnfaJ1AjRmXXP7YqqR7N4or5Dd26v5dq0uot1HuEj3fjs3s/hwOuvzkIu4iASqEY3mrdt6Q==", "item"=>{"title"=>"an item on the list"}, "commit"=>"Create Item"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.7ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 02:54:49 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dj4ZCqorfhJyJ+7AnfaJ1AjRmXXP7YqqR7N4or5Dd26v5dq0uot1HuEj3fjs3s/hwOuvzkIu4iASqEY3mrdt6Q==", "item"=>{"title"=>"an item on the list"}, "commit"=>"Create Item"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.5ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:01:56 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dj4ZCqorfhJyJ+7AnfaJ1AjRmXXP7YqqR7N4or5Dd26v5dq0uot1HuEj3fjs3s/hwOuvzkIu4iASqEY3mrdt6Q==", "item"=>{"title"=>"an item on the list"}, "commit"=>"Create Item"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.8ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:03:14 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/action/ToDoList/app/controllers/items_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/items_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.2ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:03:46 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dj4ZCqorfhJyJ+7AnfaJ1AjRmXXP7YqqR7N4or5Dd26v5dq0uot1HuEj3fjs3s/hwOuvzkIu4iASqEY3mrdt6Q==", "item"=>{"title"=>"an item on the list"}, "commit"=>"Create Item"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.4ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:05:04 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dj4ZCqorfhJyJ+7AnfaJ1AjRmXXP7YqqR7N4or5Dd26v5dq0uot1HuEj3fjs3s/hwOuvzkIu4iASqEY3mrdt6Q==", "item"=>{"title"=>"an item on the list"}, "commit"=>"Create Item"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.6ms)
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 03:05:29 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC[0m  [["list_id", 2]]
+  Rendered lists/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 111ms (Views: 98.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 03:06:01 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC[0m  [["list_id", 2]]
+  Rendered lists/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 122ms (Views: 119.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:07:30 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oLWZeIoUScIg46+1hzmQVuUgro/8kKXYvigH4cAM6YR5blrGmrRCzrPnnI32EdZjLRqYNHFTzVLrMzl05PjzAw==", "item"=>{"title"=>"an item"}, "commit"=>"Create Item"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.5ms)
+
+
+Started GET "/" for 184.189.249.118 at 2015-03-02 03:07:45 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered homes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered homes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 108ms (Views: 100.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-02 03:08:58 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 03:09:00 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC  [["list_id", 2]]
+  Rendered lists/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 116ms (Views: 103.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:09:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aGY1FVdxh9g1zuIrv0eY0lzJoKmypldnWraz3zr9TFexvfarR9GM1KbK0RPOb97nlPOWEj9lP+0PrY1KHglW0A==", "item"=>{"title"=>""}, "commit"=>"Create Item"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.9ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:09:08 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oxC+AVa+JI0UEC8yyDZRxPdOK8kR5pR/nYn0k9e3+q96y32/Rh4vgYcUHAq5HhfxP3Qdcpwl/PXIksoG80PgKA==", "item"=>{"title"=>"item"}, "commit"=>"Create Item"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:13:33 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oxC+AVa+JI0UEC8yyDZRxPdOK8kR5pR/nYn0k9e3+q96y32/Rh4vgYcUHAq5HhfxP3Qdcpwl/PXIksoG80PgKA==", "item"=>{"title"=>"item"}, "commit"=>"Create Item"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.3ms)
+
+
+Started GET "/" for 184.189.249.118 at 2015-03-02 03:13:50 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  [1m[35mList Load (0.3ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered homes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/2" for 184.189.249.118 at 2015-03-02 03:14:10 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC  [["list_id", 2]]
+  Rendered lists/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-02 03:14:44 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VS+L7HkY4OPQ0qSg65EQVo1gUasOpD3lfEN+DHgCaISM9EhSabjr70PWl5iauVZjRVpnEINnVW8pWECZXPZyAw==", "item"=>{"title"=>"new"}, "commit"=>"Create Item"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.4ms)

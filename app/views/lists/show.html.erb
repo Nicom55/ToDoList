@@ -1,5 +1,18 @@
 <div>
   <%= content_tag :p, @list.title %>
+  
+  <!-- Add an item -->
+  Add an item:
+  <%= form_for(@new_item) do |item| %>
+  <div class="field">
+    <%= item.text_field :title %>
+  </div>
+  <div class="actions">
+    <%= item.submit %>
+  </div>
+<% end %>
+  
+  <!-- list all items -->
   <% @items.each do |item| %>
     <%= content_tag :p, item.title %>
   <% end %>
