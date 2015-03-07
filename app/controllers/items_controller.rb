@@ -1,13 +1,13 @@
 class ItemsController < ApplicationController
 
   def create
-    @list = List.find(params[:id])
+    @list = List.find(params[:list_id])
     @item = @list.items.create(item_params)
-    render @item
+    redirect_to list_path(@list)
   end
   
   def update
-    @list = List.find(params[:id])
+    @list = List.find(params[:list_id])
     @item = Item.find(params[:id])
     if @item.update(item_params)
       redirect_to list_path(@list)
@@ -18,10 +18,10 @@ class ItemsController < ApplicationController
   end
   
   def destroy
-    @list = List.find(params[:id])
     @item = Item.find(params[:id])
+    @list = @comment.list
     @item.destroy
-    render :nothing => true
+    redirect_to goal_path(@goal)
   end
   
   private
