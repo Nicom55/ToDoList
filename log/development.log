@@ -5357,3 +5357,244 @@ ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
   Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
   Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.8ms)
+
+
+Started GET "/image_links" for 66.249.80.22 at 2015-03-02 12:32:34 +0000
+Cannot render console from 66.249.80.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/image_links"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:29:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/action/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.9ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.0ms)
+
+
+Started GET "/" for 174.129.237.157 at 2015-03-02 12:49:07 +0000
+Cannot render console from 174.129.237.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered homes/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 116ms (Views: 108.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/image_links" for 174.129.237.157 at 2015-03-02 12:49:13 +0000
+Cannot render console from 174.129.237.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/image_links"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:29:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/action/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.1ms)
+
+
+Started GET "/" for 184.189.249.118 at 2015-03-07 22:52:01 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomesController#index as HTML
+  [1m[35mList Load (0.3ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered homes/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 332ms (Views: 301.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:02 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/lists" for 184.189.249.118 at 2015-03-07 22:52:19 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k6dEevKt4+m5K1u8+20NoMU9n0W7n1DGl7lWrEYHTJ9KfIfE4g3o5SovaISKRUuVDQep/jZcOEzComg5YvNWGA==", "list"=>{"title"=>"This is a super cool list"}, "commit"=>"Create List"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "lists" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "This is a super cool list"], ["created_at", "2015-03-07 22:52:19.569554"], ["updated_at", "2015-03-07 22:52:19.569554"]]
+  [1m[36m (33.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://blistering-mothership-99-181656.usw1-2.nitrousbox.com/lists/8
+Completed 302 Found in 41ms (ActiveRecord: 34.0ms)
+
+
+Started GET "/lists/8" for 184.189.249.118 at 2015-03-07 22:52:19 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."list_id" = ?  ORDER BY created_at DESC[0m  [["list_id", 8]]
+  Rendered lists/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 152ms (Views: 105.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:19 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:19 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:19 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/list-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/items-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/lists-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for 184.189.249.118 at 2015-03-07 22:52:20 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/items" for 184.189.249.118 at 2015-03-07 22:52:35 +0000
+Cannot render console from 184.189.249.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AX3v0RctlINFe2gqeMkdKdyBqC6XW3US0toSs+pwgyfYpixvB42fj9Z/WxIJ4VscFLuelRqYHZiHwSwmzoSZoA==", "item"=>{"title"=>"and this is a super cool item"}, "commit"=>"Create Item"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=):
+  app/controllers/items_controller.rb:4:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.1ms)
